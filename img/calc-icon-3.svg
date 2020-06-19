@@ -1,0 +1,30 @@
+<svg width="66" height="71" viewBox="0 0 66 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="13" y="23" width="27" height="46" fill="white" stroke="#0D21DA" stroke-width="3"/>
+<rect x="27.2866" y="62" width="7" height="2.04098" transform="rotate(90 27.2866 62)" stroke="#282727" stroke-width="3"/>
+<rect x="23.2046" y="32" width="7.14344" height="1" stroke="#282727" stroke-width="3"/>
+<rect x="23.2046" y="53" width="7.14344" height="1" stroke="#0D21DA" stroke-width="3"/>
+<rect x="23.2046" y="42" width="7.14344" height="1" stroke="#282727" stroke-width="3"/>
+<rect x="2" y="7" width="62" height="6" stroke="#282727" stroke-width="3"/>
+<path d="M2 7L8 13" stroke="#282727" stroke-width="3"/>
+<path d="M15 7L9 13" stroke="#282727" stroke-width="3"/>
+<path d="M16 7L22 13" stroke="#282727" stroke-width="3"/>
+<path d="M29 7L23 13" stroke="#282727" stroke-width="3"/>
+<path d="M30 7L36 13" stroke="#282727" stroke-width="3"/>
+<path d="M43 7L37 13" stroke="#282727" stroke-width="3"/>
+<path d="M44 7L50 13" stroke="#282727" stroke-width="3"/>
+<path d="M58 7L64 13" stroke="#282727" stroke-width="3"/>
+<path d="M57 7L51 13" stroke="#282727" stroke-width="3"/>
+<rect x="54" y="7" width="62" height="6" transform="rotate(90 54 7)" stroke="#282727" stroke-width="3"/>
+<path d="M54 7L48 13" stroke="#282727" stroke-width="3"/>
+<path d="M54 20L48 14" stroke="#282727" stroke-width="3"/>
+<path d="M54 21L48 27" stroke="#282727" stroke-width="3"/>
+<path d="M54 34L48 28" stroke="#282727" stroke-width="3"/>
+<path d="M54 35L48 41" stroke="#282727" stroke-width="3"/>
+<path d="M54 48L48 42" stroke="#282727" stroke-width="3"/>
+<path d="M54 49L48 55" stroke="#282727" stroke-width="3"/>
+<path d="M54 63L48 69" stroke="#282727" stroke-width="3"/>
+<path d="M54 62L48 56" stroke="#282727" stroke-width="3"/>
+<path d="M1 69H65" stroke="#282727" stroke-width="3"/>
+<rect x="43" y="2" width="16" height="16" fill="#0D21DA" stroke="#282727" stroke-width="3"/>
+<path d="M3 36C3 37.6569 4.34315 39 6 39C7.65685 39 9 37.6569 9 36C9 34.3431 7.65685 33 6 33V13" stroke="#282727" stroke-width="3"/>
+</svg>

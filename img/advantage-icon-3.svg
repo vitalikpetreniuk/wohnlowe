@@ -1,0 +1,11 @@
+<svg width="55" height="118" viewBox="0 0 55 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="26.9383" cy="37.1282" rx="4.99694" ry="5" fill="white"/>
+<path d="M12 21L27.5 3L43 21" stroke="#0D21DA" stroke-width="3"/>
+<rect x="12" y="21" width="31" height="55" stroke="#282727" stroke-width="3"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4136 97.4741C37.4057 102.207 36.1374 106.546 33.4748 110.182C32.4496 111.582 31.4054 112.604 30.603 113.286L27.9431 115.548L25.2884 113.3C22.8976 111.276 18.5223 106.308 18.5368 97.509C18.5452 92.4768 21.9031 86.5727 27.9952 86.5624C34.0839 86.5527 37.4218 92.4419 37.4136 97.4741Z" stroke="#0D21DA" stroke-width="3"/>
+<rect width="21" height="10" transform="matrix(1 0 0 -1 17 86)" stroke="#282727" stroke-width="3"/>
+<rect width="1" height="18" transform="matrix(1 0 0 -1 27 74)" stroke="#282727" stroke-width="3"/>
+<circle cx="27.5" cy="37.5" r="6" stroke="#0D21DA" stroke-width="3"/>
+<path d="M53 67C53 61.4772 48.5228 57 43 57V57V76H53V67Z" stroke="#282727" stroke-width="3"/>
+<path d="M2 67C2 61.4772 6.47715 57 12 57V57V76H2V67Z" stroke="#282727" stroke-width="3"/>
+</svg>
