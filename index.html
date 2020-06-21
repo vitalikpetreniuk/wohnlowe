@@ -22,6 +22,7 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 </head>
 
@@ -87,14 +88,16 @@
 	</div>
 	<div class="body">
 		<div class="triangle">
-			<img class="triangle-img" src="img/triangle.svg" alt="triangle">
+			<div class="triangle-in">
+				<img class="triangle-img" src="img/triangle2.svg" alt="triangle">
+			</div>
 		</div>
 		<section class="top">
 			<div class="container">
 				<div class="section-in">
-					<h1>was ist <span>Ih re<br> Immobilie</span> wert?</h1>
-					<div class="subtitle">Jetzt <b>kostenlos bewerten</b> lassen</div>
-					<div class="valuation-categories">
+					<h1 data-aos="fade-up">was ist <span>Ih re<br> Immobilie</span> wert?</h1>
+					<div data-aos-delay="50" data-aos="fade-up" class="subtitle">Jetzt <b>kostenlos bewerten</b> lassen</div>
+					<div data-aos-delay="100" data-aos="fade-up" class="valuation-categories">
 						<div class="valuation-category">
 							<button data-target="flat" type="button" class="valuation-category-button">
 								<svg width="65px" height="63px" viewBox="0 0 65 63" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,7 +144,7 @@
 					<div class="calc">
 						<div data-id="flat" class="calc-block">
 							<div class="calc-screens">
-								<div class="calc-screen calc-screen-1 active">
+								<div data-target="input1" class="calc-screen calc-screen-1 active">
 									<div class="calc-screen-title">Wie groß ist die <span>Wohnfläche</span> Ihrer Wohnung?</div>
 									<div class="calc-slider">
 										<div class="calc-slider-icon">
@@ -163,7 +166,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-2">
+								<div data-target="input2" class="calc-screen calc-screen-2">
 									<div class="calc-screen-title">Wieviel <span>Zimmer</span> hat Ihre Wohnung?</div>
 									<div class="calc-screen-subtitle">Ohne Bad und Küche</div>
 									<div class="calc-slider">
@@ -186,7 +189,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-3">
+								<div data-target="input3" class="calc-screen calc-screen-3">
 									<div class="calc-screen-title">Wann wurde das <span>Wohnhaus</span> gebaut?</div>
 									<div class="calc-slider">
 										<div class="calc-slider-icon">
@@ -208,10 +211,10 @@
 										</div>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-4">
+								<div data-target="input4" class="calc-screen calc-screen-4">
 									<div class="calc-screen-title">Wie wird Ihre <span>Wohnung</span> aktuell genutzt?</div>
 									<div class="choose-buttons choose-buttons-3">
-										<button type="button" class="choose-button">
+										<button type="button" class="choose-button active">
 											<img src="img/icon-1.svg" alt="icon">
 											<span>eigennutzung</span>
 										</button>
@@ -225,10 +228,10 @@
 										</button>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-5">
+								<div data-target="input5" class="calc-screen calc-screen-5">
 									<div class="calc-screen-title">Wie ist das <span>Ausstattungsniveau</span> Ihrer Wohnung?</div>
 									<div class="choose-buttons choose-buttons-4">
-										<button type="button" class="choose-button">
+										<button type="button" class="choose-button active">
 											<img src="img/stars-2.svg" alt="icon">
 											<span>einfach</span>
 										</button>
@@ -246,10 +249,10 @@
 										</button>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-6">
+								<div data-target="input6" class="calc-screen calc-screen-6">
 									<div class="calc-screen-title">Hat Ihre Wohnung einen eigenen <span>Parkplatz</span>?</div>
 									<div class="choose-buttons choose-buttons-4">
-										<button type="button" class="choose-button">
+										<button type="button" class="choose-button active">
 											<img src="img/icon-4.svg" alt="icon">
 											<span>garage</span>
 										</button>
@@ -267,7 +270,7 @@
 										</button>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-7">
+								<div data-target="input7" class="calc-screen calc-screen-7">
 									<div class="calc-screen-title">In welcher <span>Region</span> befindet sich das Objekt?</div>
 									<div class="postcode-wrap">
 										<div class="postcode-img">
@@ -320,6 +323,13 @@
 												<span>kostenlos und unverbindlich</span>
 											</button>
 										</div>
+										<input type="hidden" data-id="input1">
+										<input type="hidden" data-id="input2">
+										<input type="hidden" data-id="input3">
+										<input type="hidden" data-id="input4">
+										<input type="hidden" data-id="input5">
+										<input type="hidden" data-id="input6">
+										<input type="hidden" data-id="input7">
 									</form>
 								</div>
 							</div>
@@ -342,10 +352,10 @@
 						</div>
 						<div data-id="house" class="calc-block">
 							<div class="calc-screens">
-								<div class="calc-screen calc-screen-9 active">
+								<div data-target="input9" class="calc-screen calc-screen-9 active">
 									<div class="calc-screen-title">Bitte wählen Sie die <span>Art</span> des Hauses?</div>
 									<div class="choose-buttons choose-buttons-vertical choose-buttons-4">
-										<button type="button" class="choose-button">
+										<button type="button" class="choose-button active">
 											<img src="img/icon-8.svg" alt="icon">
 											<span>einfamilienhaus</span>
 										</button>
@@ -363,7 +373,7 @@
 										</button>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-10">
+								<div data-target="input10" class="calc-screen calc-screen-10">
 									<div class="calc-screen-title">Wie groß ist die <span>Wohnfläche</span> Ihrer Wohnung?</div>
 									<div class="calc-slider">
 										<div class="calc-slider-icon">
@@ -385,7 +395,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-11">
+								<div data-target="input11" class="calc-screen calc-screen-11">
 									<div class="calc-screen-title">Welche Fläche hat das <span>Grundstück</span> Ihres Hauses?</div>
 									<div class="calc-slider">
 										<div class="calc-slider-icon">
@@ -407,7 +417,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-12">
+								<div data-target="input12" class="calc-screen calc-screen-12">
 									<div class="calc-screen-title">Wie viele <span>Zimmer</span> hat Ihr Haus?</div>
 									<div class="calc-slider">
 										<div class="calc-slider-icon">
@@ -429,7 +439,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-13">
+								<div data-target="input13" class="calc-screen calc-screen-13">
 									<div class="calc-screen-title">Wann wurde das <span>Haus</span> gebaut?</div>
 									<div class="calc-slider">
 										<div class="calc-slider-icon">
@@ -451,10 +461,10 @@
 										</div>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-14">
+								<div data-target="input14" class="calc-screen calc-screen-14">
 									<div class="calc-screen-title">Wie wird ihr Haus aktuell <span>genutzt</span>?</div>
 									<div class="choose-buttons choose-buttons-3">
-										<button type="button" class="choose-button">
+										<button type="button" class="choose-button active">
 											<img src="img/icon-12.svg" alt="icon">
 											<span>eigennutzung</span>
 										</button>
@@ -468,10 +478,10 @@
 										</button>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-15">
+								<div data-target="input15" class="calc-screen calc-screen-15">
 									<div class="calc-screen-title">Wie ist das <span>Ausstattungsniveau</span> Ihres Hauses?</div>
 									<div class="choose-buttons choose-buttons-4">
-										<button type="button" class="choose-button">
+										<button type="button" class="choose-button active">
 											<img src="img/stars-2.svg" alt="icon">
 											<span>einfach</span>
 										</button>
@@ -489,10 +499,10 @@
 										</button>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-16">
+								<div data-target="input16" class="calc-screen calc-screen-16">
 									<div class="calc-screen-title">Hat Ihr Haus einen eigenen <span>Parkplatz</span>?</div>
 									<div class="choose-buttons choose-buttons-4">
-										<button type="button" class="choose-button">
+										<button type="button" class="choose-button active">
 											<img src="img/icon-4.svg" alt="icon">
 											<span>garage</span>
 										</button>
@@ -510,7 +520,7 @@
 										</button>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-17">
+								<div data-target="input17" class="calc-screen calc-screen-17">
 									<div class="calc-screen-title">In welcher <span>Region</span> befindet sich das Objekt?</div>
 									<div class="postcode-wrap">
 										<div class="postcode-img">
@@ -563,6 +573,15 @@
 												<span>kostenlos und unverbindlich</span>
 											</button>
 										</div>
+										<input type="hidden" data-id="input9">
+										<input type="hidden" data-id="input10">
+										<input type="hidden" data-id="input11">
+										<input type="hidden" data-id="input12">
+										<input type="hidden" data-id="input13">
+										<input type="hidden" data-id="input14">
+										<input type="hidden" data-id="input15">
+										<input type="hidden" data-id="input16">
+										<input type="hidden" data-id="input17">
 									</form>
 								</div>
 							</div>
@@ -585,7 +604,7 @@
 						</div>
 						<div data-id="property" class="calc-block">
 							<div class="calc-screens">
-								<div class="calc-screen calc-screen-19 active">
+								<div data-target="input19" class="calc-screen calc-screen-19 active">
 									<div class="calc-screen-title">Welche <span>Fläche</span> hat das Grundstück?</div>
 									<div class="calc-slider">
 										<div class="calc-slider-icon">
@@ -607,10 +626,10 @@
 										</div>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-20">
+								<div data-target="input20" class="calc-screen calc-screen-20">
 									<div class="calc-screen-title">Bitte wählen Sie die <span>Art</span> des Grundstücks.</div>
 									<div class="choose-buttons choose-buttons-vertical choose-buttons-4">
-										<button type="button" class="choose-button choose-button-mb">
+										<button type="button" class="choose-button choose-button-mb active">
 											<img src="img/icon-15.svg" alt="icon">
 											<span>kurzfristig bebaubar</span>
 										</button>
@@ -628,7 +647,7 @@
 										</button>
 									</div>
 								</div>
-								<div class="calc-screen calc-screen-21">
+								<div data-target="input21" class="calc-screen calc-screen-21">
 									<div class="calc-screen-title">In welcher <span>Region</span> befindet sich das Objekt?</div>
 									<div class="postcode-wrap">
 										<div class="postcode-img">
@@ -681,6 +700,9 @@
 												<span>kostenlos und unverbindlich</span>
 											</button>
 										</div>
+										<input type="hidden" data-id="input19">
+										<input type="hidden" data-id="input20">
+										<input type="hidden" data-id="input21">
 									</form>
 								</div>
 							</div>
@@ -702,7 +724,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="valuation-advantages">
+					<div data-aos-delay="150" data-aos="fade-up" class="valuation-advantages">
 						<div class="valuation-advantages-list">
 							<div class="valuation-advantages-item">Kostenlos und unverbindlich</div>
 							<div class="valuation-advantages-item">Vom Experten vor Ort</div>
@@ -710,14 +732,16 @@
 						</div>
 						<div class="valuation-advantages-safe">SSL – Ihre Daten<br> sind sicher verschlüsselt</div>
 					</div>
-					<div class="partners-links">
+					<div data-aos-delay="200" data-aos="fade-up" class="partners-links">
 						<a href="#">
 							<img src="img/partner-1.png" alt="partner">
 						</a>
 						<a href="#">
 							<img src="img/partner-2.png" alt="partner">
 						</a>
-						<iframe height='160' width='190' src='//widget.immobilienscout24.de/anbieter/bewertung/af0b35a98412b63aea0730513e78820c' frameborder=0 style='overflow:hidden;' marginheight='0' marginwidth='0' scroll='no'></iframe>
+						<a href="#">
+							<img src="img/partner-3.png" alt="partner">
+						</a>
 						<a href="#">
 							<img src="img/partner-4.png" alt="partner">
 						</a>
@@ -731,8 +755,8 @@
 		<section class="advantages">
 			<div class="container">
 				<div class="section-in">
-					<h2>Ihre <span>Vorteile beim Verkauf</span> mit wohnlöw</h2>
-					<div class="advantages-list">
+					<h2 data-aos="fade-up">Ihre <span>Vorteile beim Verkauf</span> mit wohnlöw</h2>
+					<div data-aos="fade-up" class="advantages-list">
 						<div class="advantages-item">
 							<div class="advantages-item-icon">
 								<svg width="84px" height="88px" viewBox="0 0 84 88" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -794,20 +818,20 @@
 		<section class="value">
 			<div class="container">
 				<div class="section-in">
-					<div class="value-block">
-						<h2 class="value-block-title">Und was ist <span>Ihre z Immobilie</span> wert?</h2>
-						<div class="value-block-text">Jetzt Bewertung kostenlos in nur 3 Minuten durchführen.</div>
-						<div class="value-block-link">
+					<div data-aos="fade-up" class="value-block">
+						<h2 data-aos="fade-up" class="value-block-title">Und was ist <span>Ihre z Immobilie</span> wert?</h2>
+						<div data-aos="fade-up" class="value-block-text">Jetzt Bewertung kostenlos in nur 3 Minuten durchführen.</div>
+						<div data-aos="fade-up" class="value-block-link">
 							<a href="#" class="btn">Persönliche Beratung</a>
 						</div>
 					</div>
 				</div>
 				<div class="director">
-					<div class="director-in">
+					<div data-aos="fade-up" class="director-in">
 						<div class="director-name">Michail Zaitsev</div>
 						<div class="director-about">Geschäftsführer und Immobilienberater</div>
 					</div>
-					<div class="director-img">
+					<div data-aos="fade-up" class="director-img">
 						<img src="img/director.png" alt="director">
 					</div>
 				</div>
@@ -816,9 +840,9 @@
 		<section class="reviews">
 			<div class="container">
 				<div class="section-in">
-					<h2>was andere <span>über uns</span> sagen</h2>
+					<h2 data-aos="fade-up">was andere <span>über uns</span> sagen</h2>
 					<div class="reviews-list row">
-						<div class="col-3">
+						<div data-aos="fade-up" class="col-3">
 							<div class="reviews-item">
 								<div class="reviews-item-img-big">
 									<img src="img/review-img-big-1.jpg" alt="img">
@@ -844,7 +868,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
+						<div data-aos="fade-up" class="col-3">
 							<div class="reviews-item">
 								<div class="reviews-item-in">
 									<div class="reviews-item-top">
@@ -864,7 +888,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
+						<div data-aos="fade-up" class="col-3">
 							<div class="reviews-item">
 								<div class="reviews-item-img-big">
 									<img src="img/review-img-big-2.jpg" alt="img">
@@ -887,7 +911,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
+						<div data-aos="fade-up" class="col-3">
 							<div class="reviews-item">
 								<div class="reviews-item-img-big">
 									<img src="img/review-img-big-2.jpg" alt="img">
@@ -914,7 +938,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="reviews-widget">
+					<div data-aos="fade-up" class="reviews-widget">
 						<img src="img/reviews-widget.jpg" alt="img">
 					</div>
 				</div>
@@ -923,9 +947,9 @@
 		<section class="video">
 			<div class="container">
 				<div class="section-in">
-					<h2>Das Video wird <span>mehr sagen</span></h2>
+					<h2 data-aos="fade-up">Das Video wird <span>mehr sagen</span></h2>
 					<div class="video-list row">
-						<div class="col-4">
+						<div data-aos="fade-up" class="col-4">
 							<div class="video-item">
 								<div class="video-item-video">
 									<div class="video-item-cover">
@@ -942,7 +966,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-4">
+						<div data-aos="fade-up" class="col-4">
 							<div class="video-item">
 								<div class="video-item-video">
 									<div class="video-item-cover">
@@ -959,7 +983,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-4">
+						<div data-aos="fade-up" class="col-4">
 							<div class="video-item">
 								<div class="video-item-video">
 									<div class="video-item-cover">
@@ -977,7 +1001,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="show-all">
+					<div data-aos="fade-up" data-aos="fade-up" class="show-all">
 						<a href="#" class="btn btn-arrow">
 							<span>alle video</span>
 							<svg width="45px" height="16px" viewBox="0 0 45 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -992,24 +1016,24 @@
 		<div class="achievements">
 			<div class="container">
 				<div class="section-in">
-					<h2>WOHNLÖWE – <span>starke Zahlen</span>, starke Leistung</h2>
+					<h2 data-aos="fade-up">WOHNLÖWE – <span>starke Zahlen</span>, starke Leistung</h2>
 					<div class="achievements-cont">
 						<div class="achievements-list">
-							<div class="achievements-item">
+							<div data-aos="fade-up" class="achievements-item">
 								<div class="achievements-item-top">
 									<div class="achievements-item-num">15</div>
 									<div class="achievements-item-val">Jahre</div>
 								</div>
 								<div class="achievements-item-desc">Branchenerfahrung unserer Experten</div>
 							</div>
-							<div class="achievements-item">
+							<div data-aos="fade-up" class="achievements-item">
 								<div class="achievements-item-top">
 									<div class="achievements-item-num">64</div>
 									<div class="achievements-item-val">Tage</div>
 								</div>
 								<div class="achievements-item-desc">durchschnittliche Vermarktungsdauer</div>
 							</div>
-							<div class="achievements-item">
+							<div data-aos="fade-up" class="achievements-item">
 								<div class="achievements-item-top">
 									<div class="achievements-item-num">94</div>
 									<div class="achievements-item-val">%</div>
@@ -1017,7 +1041,7 @@
 								<div class="achievements-item-desc">durchschnittliche Erzielung des Angebotspreises</div>
 							</div>
 						</div>
-						<div class="show-all">
+						<div data-aos="fade-up" class="show-all">
 							<a href="#" class="btn btn-arrow">
 								<span>über uns</span>
 								<svg width="45px" height="16px" viewBox="0 0 45 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1033,10 +1057,10 @@
 		<section class="current">
 			<div class="container">
 				<div class="section-in">
-					<h2>Aktuelle <span>Angebote</span></h2>
+					<h2 data-aos="fade-up">Aktuelle <span>Angebote</span></h2>
 					<div class="current-cont">
 						<div class="projects-list row">
-							<div class="col-4">
+							<div data-aos="fade-up" class="col-4">
 								<div class="projects-item">
 									<div class="projects-item-img">
 										<a href="#">
@@ -1063,7 +1087,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div data-aos="fade-up" class="col-4">
 								<div class="projects-item">
 									<div class="projects-item-img">
 										<a href="#">
@@ -1092,7 +1116,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div data-aos="fade-up" class="col-4">
 								<div class="projects-item">
 									<div class="projects-item-img">
 										<a href="#">
@@ -1122,7 +1146,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="show-all">
+						<div data-aos="fade-up" class="show-all">
 							<a href="#" class="btn btn-arrow">
 								<span>Alle Angebote</span>
 								<svg width="45px" height="16px" viewBox="0 0 45 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1138,10 +1162,10 @@
 		<section class="sold">
 			<div class="container">
 				<div class="section-in">
-					<h2><span>Verkaufte</span> Objekte</h2>
+					<h2 data-aos="fade-up"><span>Verkaufte</span> Objekte</h2>
 					<div class="sold-cont">
 						<div class="projects-list row">
-							<div class="col-4">
+							<div data-aos="fade-up" class="col-4">
 								<div class="projects-item">
 									<div class="projects-item-img">
 										<a href="#">
@@ -1164,7 +1188,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div data-aos="fade-up" class="col-4">
 								<div class="projects-item">
 									<div class="projects-item-img">
 										<a href="#">
@@ -1187,7 +1211,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div data-aos="fade-up" class="col-4">
 								<div class="projects-item">
 									<div class="projects-item-img">
 										<a href="#">
@@ -1211,7 +1235,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="show-all">
+						<div data-aos="fade-up" class="show-all">
 							<a href="#" class="btn btn-arrow">
 								<span>Alle Angebote</span>
 								<svg width="45px" height="16px" viewBox="0 0 45 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1227,8 +1251,8 @@
 		<section class="partners">
 			<div class="container">
 				<div class="section-in">
-					<h2>Offizielle <span>Partner</span></h2>
-					<div class="partners-list">
+					<h2 data-aos="fade-up">Offizielle <span>Partner</span></h2>
+					<div data-aos="fade-up" class="partners-list">
 						<div class="partners-block">
 							<div class="partners-item">
 								<a href="#">
