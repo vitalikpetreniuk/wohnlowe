@@ -94,8 +94,8 @@
 					</div>
 				</div>
 				<div class="header-buttons">
-					<a href="#" class="btn">Persönliche Beratung</a>
-					<a href="#" class="btn btn-outline">Kostenlos bewerten</a>
+					<a data-target="modal-1" href="#" class="btn modal-open">Persönliche Beratung</a>
+					<a data-target="modal-2" href="#" class="btn btn-outline modal-open">Kostenlos bewerten</a>
 				</div>
 				<button type="button" class="header-toggle"><span></span></button>
 			</div>
@@ -1504,8 +1504,8 @@
 						</div>
 					</div>
 					<div class="footer-buttons">
-						<a href="#" class="btn">Persönliche Beratung</a>
-						<a href="#" class="btn btn-outline">Kostenlos bewerten</a>
+						<a data-target="modal-1" href="#" class="btn modal-open">Persönliche Beratung</a>
+						<a data-target="modal-2" href="#" class="btn btn-outline modal-open">Kostenlos bewerten</a>
 						<a href="#" class="btn btn-icon">
 						<span>
 							<svg width="22px" height="22px" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1590,6 +1590,884 @@
 			</div>
 		</div>
 	</footer>
+
+	<div data-id="modal-1" class="modal calc-inside">
+		<div class="modal-cont">
+			<button type="button" class="modal-close">
+				<img src="img/close.svg" alt="close">
+			</button>
+			<div class="modal-body">
+				<div class="valuation-categories">
+					<div class="valuation-category">
+						<button data-target="flat" type="button" class="valuation-category-button">
+							<svg width="65px" height="63px" viewBox="0 0 65 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="45.8809" y="12" width="17.3484" height="49" fill="white" stroke="#282727" stroke-width="3"/>
+								<rect x="2" y="12" width="17.3484" height="49" fill="white" stroke="#282727" stroke-width="3"/>
+								<rect x="19.3486" y="2" width="26.5328" height="59" fill="white" stroke="#0D21DA" stroke-width="3"/>
+								<rect x="33.6353" y="54" width="7" height="2.04098" transform="rotate(90 33.6353 54)" stroke="#282727" stroke-width="3"/>
+								<rect x="29.5532" y="12" width="7.14344" height="1" stroke="#282727" stroke-width="3"/>
+								<rect x="29.5532" y="34" width="7.14344" height="1" stroke="#0D21DA" stroke-width="3"/>
+								<rect x="29.5532" y="23" width="7.14344" height="1" stroke="#282727" stroke-width="3"/>
+							</svg>
+							<span>wohnung</span>
+						</button>
+					</div>
+					<div class="valuation-category">
+						<button data-target="house" type="button" class="valuation-category-button">
+							<svg width="86px" height="54px" viewBox="0 0 86 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="55" y="29" width="25" height="23" fill="white" stroke="#282727" stroke-width="3"/>
+								<path d="M61 44H75" stroke="#282727" stroke-width="3"/>
+								<path d="M61 36H75" stroke="#282727" stroke-width="3"/>
+								<path d="M7 20.6869L31 2L55 20.6869V52H7V20.6869Z" fill="white" stroke="#0D21DA" stroke-width="3"/>
+								<rect x="18.6001" y="33.8182" width="24.8" height="18.1818" fill="white" stroke="#282727" stroke-width="3"/>
+								<rect x="18.6001" y="22.707" width="12.4" height="1.0101" stroke="#282727" stroke-width="3"/>
+								<path d="M0 52H86" stroke="#282727" stroke-width="3"/>
+							</svg>
+							<span>haus</span>
+						</button>
+					</div>
+					<div class="valuation-category">
+						<button data-target="property" type="button" class="valuation-category-button">
+							<svg width="66px" height="63px" viewBox="0 0 66 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 26C2 21.0294 6.02944 17 11 17H20V37C20 41.9706 15.9706 46 11 46C6.02944 46 2 41.9706 2 37V26Z" fill="white" stroke="#282727" stroke-width="3"/>
+								<path d="M46 26C46 21.0294 50.0294 17 55 17H64V37C64 41.9706 59.9706 46 55 46C50.0294 46 46 41.9706 46 37V26Z" fill="white" stroke="#282727" stroke-width="3"/>
+								<path d="M3 61H63" stroke="#282727" stroke-width="3"/>
+								<path d="M11 26L11 62" stroke="#282727" stroke-width="3"/>
+								<path d="M55 26L55 62" stroke="#282727" stroke-width="3"/>
+								<path d="M20 15C20 7.8203 25.8203 2 33 2H46V38C46 45.1797 40.1797 51 33 51C25.8203 51 20 45.1797 20 38V15Z" fill="white" stroke="#0D21DA" stroke-width="3"/>
+								<path d="M33 12.5L33 62" stroke="#282727" stroke-width="3"/>
+							</svg>
+							<span>Grundstück</span>
+						</button>
+					</div>
+				</div>
+				<div class="calc">
+					<div data-id="flat" class="calc-block">
+						<div class="calc-screens">
+							<div class="calc-screen calc-screen-8 active">
+								<div class="calc-screen-title">Wer soll die <span>Bewertung</span> erhalten?</div>
+								<form>
+									<div class="contact-checks">
+										<div class="form-check">
+											<input type="radio" value="frau" id="frau1234" name="gender">
+											<label for="frau1234">Frau</label>
+										</div>
+										<div class="form-check">
+											<input type="radio" value="herr" id="herr1234" name="gender">
+											<label for="herr1234">Herr</label>
+										</div>
+									</div>
+									<div class="contact-form-flex">
+										<div class="form-block">
+											<input type="text" placeholder="Vorname">
+										</div>
+										<div class="form-block">
+											<input type="tel" placeholder="telefon">
+										</div>
+									</div>
+									<div class="contact-form-flex">
+										<div class="form-block">
+											<input type="text" placeholder="Nachname">
+										</div>
+										<div class="form-block">
+											<input type="email" placeholder="E-mail">
+										</div>
+									</div>
+									<div class="contact-form-bottom">
+										<div class="contact-form-protect">
+											<div class="form-check">
+												<input type="checkbox" id="protect231">
+												<label for="protect231">Dieser Service ist kostenfrei. Mit Angabe meiner Daten stimme ich dem Kontakt durch WOHNLOWE zu, siehe <a href="#">Datenschutzhinweis</a>.</label>
+											</div>
+										</div>
+										<button type="submit" class="btn">
+											bewertung erhalten
+											<span>kostenlos und unverbindlich</span>
+										</button>
+									</div>
+									<input type="hidden" data-id="input1">
+									<input type="hidden" data-id="input2">
+									<input type="hidden" data-id="input3">
+									<input type="hidden" data-id="input4">
+									<input type="hidden" data-id="input5">
+									<input type="hidden" data-id="input6">
+									<input type="hidden" data-id="input7">
+								</form>
+							</div>
+						</div>
+						<div class="calc-nav finish">
+							<button type="button" class="calc-back calc-nav-button">
+								<svg width="24px" height="16px" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22 8L3 8" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M8 14L2 8L8 2" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div data-id="house" class="calc-block">
+						<div class="calc-screens">
+							<div class="calc-screen calc-screen-18 active">
+								<div class="calc-screen-title">Wer soll die <span>Bewertung</span> erhalten?</div>
+								<form>
+									<div class="contact-checks">
+										<div class="form-check">
+											<input type="radio" value="frau" id="frau256" name="gender">
+											<label for="frau256">Frau</label>
+										</div>
+										<div class="form-check">
+											<input type="radio" value="herr" id="herr2117" name="gender">
+											<label for="herr2117">Herr</label>
+										</div>
+									</div>
+									<div class="contact-form-flex">
+										<div class="form-block">
+											<input type="text" placeholder="Vorname">
+										</div>
+										<div class="form-block">
+											<input type="tel" placeholder="telefon">
+										</div>
+									</div>
+									<div class="contact-form-flex">
+										<div class="form-block">
+											<input type="text" placeholder="Nachname">
+										</div>
+										<div class="form-block">
+											<input type="email" placeholder="E-mail">
+										</div>
+									</div>
+									<div class="contact-form-bottom">
+										<div class="contact-form-protect">
+											<div class="form-check">
+												<input type="checkbox" id="protect288">
+												<label for="protect288">Dieser Service ist kostenfrei. Mit Angabe meiner Daten stimme ich dem Kontakt durch WOHNLOWE zu, siehe <a href="#">Datenschutzhinweis</a>.</label>
+											</div>
+										</div>
+										<button type="submit" class="btn">
+											bewertung erhalten
+											<span>kostenlos und unverbindlich</span>
+										</button>
+									</div>
+									<input type="hidden" data-id="input9">
+									<input type="hidden" data-id="input10">
+									<input type="hidden" data-id="input11">
+									<input type="hidden" data-id="input12">
+									<input type="hidden" data-id="input13">
+									<input type="hidden" data-id="input14">
+									<input type="hidden" data-id="input15">
+									<input type="hidden" data-id="input16">
+									<input type="hidden" data-id="input17">
+								</form>
+							</div>
+						</div>
+						<div class="calc-nav finish">
+							<button type="button" class="calc-back calc-nav-button">
+								<svg width="24px" height="16px" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22 8L3 8" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M8 14L2 8L8 2" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div data-id="property" class="calc-block">
+						<div class="calc-screens">
+							<div class="calc-screen calc-screen-22 active">
+								<div class="calc-screen-title">Wer soll die <span>Bewertung</span> erhalten?</div>
+								<form>
+									<div class="contact-checks">
+										<div class="form-check">
+											<input type="radio" value="frau" id="frau309" name="gender">
+											<label for="frau309">Frau</label>
+										</div>
+										<div class="form-check">
+											<input type="radio" value="herr" id="herr309" name="gender">
+											<label for="herr309">Herr</label>
+										</div>
+									</div>
+									<div class="contact-form-flex">
+										<div class="form-block">
+											<input type="text" placeholder="Vorname">
+										</div>
+										<div class="form-block">
+											<input type="tel" placeholder="telefon">
+										</div>
+									</div>
+									<div class="contact-form-flex">
+										<div class="form-block">
+											<input type="text" placeholder="Nachname">
+										</div>
+										<div class="form-block">
+											<input type="email" placeholder="E-mail">
+										</div>
+									</div>
+									<div class="contact-form-bottom">
+										<div class="contact-form-protect">
+											<div class="form-check">
+												<input type="checkbox" id="protect309">
+												<label for="protect309">Dieser Service ist kostenfrei. Mit Angabe meiner Daten stimme ich dem Kontakt durch WOHNLOWE zu, siehe <a href="#">Datenschutzhinweis</a>.</label>
+											</div>
+										</div>
+										<button type="submit" class="btn">
+											bewertung erhalten
+											<span>kostenlos und unverbindlich</span>
+										</button>
+									</div>
+									<input type="hidden" data-id="input19">
+									<input type="hidden" data-id="input20">
+									<input type="hidden" data-id="input21">
+								</form>
+							</div>
+						</div>
+						<div class="calc-nav finish">
+							<button type="button" class="calc-back calc-nav-button">
+								<svg width="24px" height="16px" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22 8L3 8" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M8 14L2 8L8 2" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-back"></div>
+	</div>
+	<div data-id="modal-2" class="modal calc-inside">
+		<div class="modal-cont">
+			<button type="button" class="modal-close">
+				<img src="img/close.svg" alt="close">
+			</button>
+			<div class="modal-body">
+				<div class="valuation-categories">
+					<div class="valuation-category">
+						<button data-target="flat" type="button" class="valuation-category-button">
+							<svg width="65px" height="63px" viewBox="0 0 65 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="45.8809" y="12" width="17.3484" height="49" fill="white" stroke="#282727" stroke-width="3"/>
+								<rect x="2" y="12" width="17.3484" height="49" fill="white" stroke="#282727" stroke-width="3"/>
+								<rect x="19.3486" y="2" width="26.5328" height="59" fill="white" stroke="#0D21DA" stroke-width="3"/>
+								<rect x="33.6353" y="54" width="7" height="2.04098" transform="rotate(90 33.6353 54)" stroke="#282727" stroke-width="3"/>
+								<rect x="29.5532" y="12" width="7.14344" height="1" stroke="#282727" stroke-width="3"/>
+								<rect x="29.5532" y="34" width="7.14344" height="1" stroke="#0D21DA" stroke-width="3"/>
+								<rect x="29.5532" y="23" width="7.14344" height="1" stroke="#282727" stroke-width="3"/>
+							</svg>
+							<span>wohnung</span>
+						</button>
+					</div>
+					<div class="valuation-category">
+						<button data-target="house" type="button" class="valuation-category-button">
+							<svg width="86px" height="54px" viewBox="0 0 86 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="55" y="29" width="25" height="23" fill="white" stroke="#282727" stroke-width="3"/>
+								<path d="M61 44H75" stroke="#282727" stroke-width="3"/>
+								<path d="M61 36H75" stroke="#282727" stroke-width="3"/>
+								<path d="M7 20.6869L31 2L55 20.6869V52H7V20.6869Z" fill="white" stroke="#0D21DA" stroke-width="3"/>
+								<rect x="18.6001" y="33.8182" width="24.8" height="18.1818" fill="white" stroke="#282727" stroke-width="3"/>
+								<rect x="18.6001" y="22.707" width="12.4" height="1.0101" stroke="#282727" stroke-width="3"/>
+								<path d="M0 52H86" stroke="#282727" stroke-width="3"/>
+							</svg>
+							<span>haus</span>
+						</button>
+					</div>
+					<div class="valuation-category">
+						<button data-target="property" type="button" class="valuation-category-button">
+							<svg width="66px" height="63px" viewBox="0 0 66 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 26C2 21.0294 6.02944 17 11 17H20V37C20 41.9706 15.9706 46 11 46C6.02944 46 2 41.9706 2 37V26Z" fill="white" stroke="#282727" stroke-width="3"/>
+								<path d="M46 26C46 21.0294 50.0294 17 55 17H64V37C64 41.9706 59.9706 46 55 46C50.0294 46 46 41.9706 46 37V26Z" fill="white" stroke="#282727" stroke-width="3"/>
+								<path d="M3 61H63" stroke="#282727" stroke-width="3"/>
+								<path d="M11 26L11 62" stroke="#282727" stroke-width="3"/>
+								<path d="M55 26L55 62" stroke="#282727" stroke-width="3"/>
+								<path d="M20 15C20 7.8203 25.8203 2 33 2H46V38C46 45.1797 40.1797 51 33 51C25.8203 51 20 45.1797 20 38V15Z" fill="white" stroke="#0D21DA" stroke-width="3"/>
+								<path d="M33 12.5L33 62" stroke="#282727" stroke-width="3"/>
+							</svg>
+							<span>Grundstück</span>
+						</button>
+					</div>
+				</div>
+				<div class="calc">
+					<div data-id="flat" class="calc-block">
+						<div class="calc-screens">
+							<div data-target="input1" class="calc-screen calc-screen-1 active">
+								<div class="calc-screen-title">Wie groß ist die <span>Wohnfläche</span> Ihrer Wohnung?</div>
+								<div class="calc-slider">
+									<div class="calc-slider-icon">
+										<img src="img/calc-icon.svg" alt="icon">
+									</div>
+									<div class="calc-slider-range">
+										<div class="range range-1"></div>
+										<div class="calc-slider-range-labels">
+											<div class="calc-slider-range-label"><20m<sup>2</sup></div>
+											<div class="calc-slider-range-label">>200m<sup>2</sup></div>
+										</div>
+									</div>
+									<div class="calc-slider-input">
+										<div class="calc-slider-input-block">
+											<input type="number" min="20" max="200" value="20">
+											<div class="calc-slider-input-postfix">m<sup>2</sup></div>
+										</div>
+										<div class="calc-slider-input-label">Alternativ eintippen</div>
+									</div>
+								</div>
+							</div>
+							<div data-target="input2" class="calc-screen calc-screen-2">
+								<div class="calc-screen-title">Wieviel <span>Zimmer</span> hat Ihre Wohnung?</div>
+								<div class="calc-screen-subtitle">Ohne Bad und Küche</div>
+								<div class="calc-slider">
+									<div class="calc-slider-icon">
+										<img src="img/calc-icon-2.svg" alt="icon">
+									</div>
+									<div class="calc-slider-range">
+										<div class="range range-2"></div>
+										<div class="calc-slider-range-labels">
+											<div class="calc-slider-range-label"></div>
+											<div class="calc-slider-range-label">Zimmer</div>
+										</div>
+									</div>
+									<div class="calc-slider-input">
+										<div class="calc-slider-input-block">
+											<input type="number" min="1" max="10" value="1">
+											<div class="calc-slider-input-postfix">Zimmer</div>
+										</div>
+										<div class="calc-slider-input-label">Alternativ eintippen</div>
+									</div>
+								</div>
+							</div>
+							<div data-target="input3" class="calc-screen calc-screen-3">
+								<div class="calc-screen-title">Wann wurde das <span>Wohnhaus</span> gebaut?</div>
+								<div class="calc-slider">
+									<div class="calc-slider-icon">
+										<img src="img/calc-icon-3.svg" alt="icon">
+									</div>
+									<div class="calc-slider-range">
+										<div class="range range-3"></div>
+										<div class="calc-slider-range-labels">
+											<div class="calc-slider-range-label"><1900</div>
+											<div class="calc-slider-range-label">>2020</div>
+										</div>
+									</div>
+									<div class="calc-slider-input">
+										<div class="calc-slider-input-block">
+											<input type="number" min="1900" max="2020" value="1900">
+											<div class="calc-slider-input-postfix">Baujahr</div>
+										</div>
+										<div class="calc-slider-input-label">Alternativ eintippen</div>
+									</div>
+								</div>
+							</div>
+							<div data-target="input4" class="calc-screen calc-screen-4">
+								<div class="calc-screen-title">Wie wird Ihre <span>Wohnung</span> aktuell genutzt?</div>
+								<div class="choose-buttons choose-buttons-3">
+									<button type="button" class="choose-button active">
+										<img src="img/icon-1.svg" alt="icon">
+										<span>eigennutzung</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-2.svg" alt="icon">
+										<span>vermietet</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-3.svg" alt="icon">
+										<span>leerstehend</span>
+									</button>
+								</div>
+							</div>
+							<div data-target="input5" class="calc-screen calc-screen-5">
+								<div class="calc-screen-title">Wie ist das <span>Ausstattungsniveau</span> Ihrer Wohnung?</div>
+								<div class="choose-buttons choose-buttons-4">
+									<button type="button" class="choose-button active">
+										<img src="img/stars-2.svg" alt="icon">
+										<span>einfach</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/stars-3.svg" alt="icon">
+										<span>normal</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/stars-4.svg" alt="icon">
+										<span>gehoben</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/stars-5.svg" alt="icon">
+										<span>luxus</span>
+									</button>
+								</div>
+							</div>
+							<div data-target="input6" class="calc-screen calc-screen-6">
+								<div class="calc-screen-title">Hat Ihre Wohnung einen eigenen <span>Parkplatz</span>?</div>
+								<div class="choose-buttons choose-buttons-4">
+									<button type="button" class="choose-button active">
+										<img src="img/icon-4.svg" alt="icon">
+										<span>garage</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-5.svg" alt="icon">
+										<span>tiefgarage</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-6.svg" alt="icon">
+										<span>stellplatz<br> im freinen</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-7.svg" alt="icon">
+										<span>kein<br> eigener<br> parkplatz</span>
+									</button>
+								</div>
+							</div>
+							<div data-target="input7" class="calc-screen calc-screen-7">
+								<div class="calc-screen-title">In welcher <span>Region</span> befindet sich das Objekt?</div>
+								<div class="postcode-wrap">
+									<div class="postcode-img">
+										<img src="img/location-map.svg" alt="img">
+									</div>
+									<div class="postcode-input form-block">
+										<input type="text">
+										<div class="postcode-input-label">Postleitzahl</div>
+									</div>
+								</div>
+							</div>
+							<div class="calc-screen calc-screen-8">
+								<div class="calc-screen-title">Wer soll die <span>Bewertung</span> erhalten?</div>
+								<form>
+									<div class="contact-checks">
+										<div class="form-check">
+											<input type="radio" value="frau" id="frau123" name="gender">
+											<label for="frau123">Frau</label>
+										</div>
+										<div class="form-check">
+											<input type="radio" value="herr" id="herr123" name="gender">
+											<label for="herr123">Herr</label>
+										</div>
+									</div>
+									<div class="contact-form-flex">
+										<div class="form-block">
+											<input type="text" placeholder="Vorname">
+										</div>
+										<div class="form-block">
+											<input type="tel" placeholder="telefon">
+										</div>
+									</div>
+									<div class="contact-form-flex">
+										<div class="form-block">
+											<input type="text" placeholder="Nachname">
+										</div>
+										<div class="form-block">
+											<input type="email" placeholder="E-mail">
+										</div>
+									</div>
+									<div class="contact-form-bottom">
+										<div class="contact-form-protect">
+											<div class="form-check">
+												<input type="checkbox" id="protect23">
+												<label for="protect23">Dieser Service ist kostenfrei. Mit Angabe meiner Daten stimme ich dem Kontakt durch WOHNLOWE zu, siehe <a href="#">Datenschutzhinweis</a>.</label>
+											</div>
+										</div>
+										<button type="submit" class="btn">
+											bewertung erhalten
+											<span>kostenlos und unverbindlich</span>
+										</button>
+									</div>
+									<input type="hidden" data-id="input1">
+									<input type="hidden" data-id="input2">
+									<input type="hidden" data-id="input3">
+									<input type="hidden" data-id="input4">
+									<input type="hidden" data-id="input5">
+									<input type="hidden" data-id="input6">
+									<input type="hidden" data-id="input7">
+								</form>
+							</div>
+						</div>
+						<div class="calc-nav">
+							<button type="button" class="calc-back calc-nav-button">
+								<svg width="24px" height="16px" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22 8L3 8" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M8 14L2 8L8 2" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+							<div class="calc-progress"><span></span></div>
+							<button type="button" class="calc-forward calc-nav-button btn btn-arrow">
+								<span>weiter</span>
+								<svg width="45px" height="16px" viewBox="0 0 45 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 8L42 8" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M37 2L43 8L37 14" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div data-id="house" class="calc-block">
+						<div class="calc-screens">
+							<div data-target="input9" class="calc-screen calc-screen-9 active">
+								<div class="calc-screen-title">Bitte wählen Sie die <span>Art</span> des Hauses?</div>
+								<div class="choose-buttons choose-buttons-vertical choose-buttons-4">
+									<button type="button" class="choose-button active">
+										<img src="img/icon-8.svg" alt="icon">
+										<span>einfamilienhaus</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-9.svg" alt="icon">
+										<span>reinhaus</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-10.svg" alt="icon">
+										<span>doppelhaushälfte</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-11.svg" alt="icon">
+										<span>mehrfamilienhaus</span>
+									</button>
+								</div>
+							</div>
+							<div data-target="input10" class="calc-screen calc-screen-10">
+								<div class="calc-screen-title">Wie groß ist die <span>Wohnfläche</span> Ihrer Wohnung?</div>
+								<div class="calc-slider">
+									<div class="calc-slider-icon">
+										<img src="img/calc-icon.svg" alt="icon">
+									</div>
+									<div class="calc-slider-range">
+										<div class="range range-4"></div>
+										<div class="calc-slider-range-labels">
+											<div class="calc-slider-range-label"><20m<sup>2</sup></div>
+											<div class="calc-slider-range-label">>700m<sup>2</sup></div>
+										</div>
+									</div>
+									<div class="calc-slider-input">
+										<div class="calc-slider-input-block">
+											<input type="number" min="20" max="700" value="20">
+											<div class="calc-slider-input-postfix">m<sup>2</sup></div>
+										</div>
+										<div class="calc-slider-input-label">Alternativ eintippen</div>
+									</div>
+								</div>
+							</div>
+							<div data-target="input11" class="calc-screen calc-screen-11">
+								<div class="calc-screen-title">Welche Fläche hat das <span>Grundstück</span> Ihres Hauses?</div>
+								<div class="calc-slider">
+									<div class="calc-slider-icon">
+										<img src="img/calc-icon-4.svg" alt="icon">
+									</div>
+									<div class="calc-slider-range">
+										<div class="range range-5"></div>
+										<div class="calc-slider-range-labels">
+											<div class="calc-slider-range-label"><20m<sup>2</sup></div>
+											<div class="calc-slider-range-label">>1000m<sup>2</sup></div>
+										</div>
+									</div>
+									<div class="calc-slider-input">
+										<div class="calc-slider-input-block">
+											<input type="number" min="20" max="1000" value="20">
+											<div class="calc-slider-input-postfix">m<sup>2</sup></div>
+										</div>
+										<div class="calc-slider-input-label">Alternativ eintippen</div>
+									</div>
+								</div>
+							</div>
+							<div data-target="input12" class="calc-screen calc-screen-12">
+								<div class="calc-screen-title">Wie viele <span>Zimmer</span> hat Ihr Haus?</div>
+								<div class="calc-slider">
+									<div class="calc-slider-icon">
+										<img src="img/calc-icon-2.svg" alt="icon">
+									</div>
+									<div class="calc-slider-range">
+										<div class="range range-2"></div>
+										<div class="calc-slider-range-labels">
+											<div class="calc-slider-range-label"></div>
+											<div class="calc-slider-range-label">Zimmer</div>
+										</div>
+									</div>
+									<div class="calc-slider-input">
+										<div class="calc-slider-input-block">
+											<input type="number" min="1" max="10" value="1">
+											<div class="calc-slider-input-postfix">Zimmer</div>
+										</div>
+										<div class="calc-slider-input-label">Alternativ eintippen</div>
+									</div>
+								</div>
+							</div>
+							<div data-target="input13" class="calc-screen calc-screen-13">
+								<div class="calc-screen-title">Wann wurde das <span>Haus</span> gebaut?</div>
+								<div class="calc-slider">
+									<div class="calc-slider-icon">
+										<img src="img/calc-icon-5.svg" alt="icon">
+									</div>
+									<div class="calc-slider-range">
+										<div class="range range-3"></div>
+										<div class="calc-slider-range-labels">
+											<div class="calc-slider-range-label"><1900</div>
+											<div class="calc-slider-range-label">>2020</div>
+										</div>
+									</div>
+									<div class="calc-slider-input">
+										<div class="calc-slider-input-block">
+											<input type="number" min="1900" max="2020" value="1900">
+											<div class="calc-slider-input-postfix">Baujahr</div>
+										</div>
+										<div class="calc-slider-input-label">Alternativ eintippen</div>
+									</div>
+								</div>
+							</div>
+							<div data-target="input14" class="calc-screen calc-screen-14">
+								<div class="calc-screen-title">Wie wird ihr Haus aktuell <span>genutzt</span>?</div>
+								<div class="choose-buttons choose-buttons-3">
+									<button type="button" class="choose-button active">
+										<img src="img/icon-12.svg" alt="icon">
+										<span>eigennutzung</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-13.svg" alt="icon">
+										<span>vermietet</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-14.svg" alt="icon">
+										<span>leerstehend</span>
+									</button>
+								</div>
+							</div>
+							<div data-target="input15" class="calc-screen calc-screen-15">
+								<div class="calc-screen-title">Wie ist das <span>Ausstattungsniveau</span> Ihres Hauses?</div>
+								<div class="choose-buttons choose-buttons-4">
+									<button type="button" class="choose-button active">
+										<img src="img/stars-2.svg" alt="icon">
+										<span>einfach</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/stars-3.svg" alt="icon">
+										<span>normal</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/stars-4.svg" alt="icon">
+										<span>gehoben</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/stars-5.svg" alt="icon">
+										<span>luxus</span>
+									</button>
+								</div>
+							</div>
+							<div data-target="input16" class="calc-screen calc-screen-16">
+								<div class="calc-screen-title">Hat Ihr Haus einen eigenen <span>Parkplatz</span>?</div>
+								<div class="choose-buttons choose-buttons-4">
+									<button type="button" class="choose-button active">
+										<img src="img/icon-4.svg" alt="icon">
+										<span>garage</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-5.svg" alt="icon">
+										<span>tiefgarage</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-6.svg" alt="icon">
+										<span>stellplatz<br> im freinen</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-7.svg" alt="icon">
+										<span>kein<br> eigener<br> parkplatz</span>
+									</button>
+								</div>
+							</div>
+							<div data-target="input17" class="calc-screen calc-screen-17">
+								<div class="calc-screen-title">In welcher <span>Region</span> befindet sich das Objekt?</div>
+								<div class="postcode-wrap">
+									<div class="postcode-img">
+										<img src="img/location-map.svg" alt="img">
+									</div>
+									<div class="postcode-input form-block">
+										<input type="text">
+										<div class="postcode-input-label">Postleitzahl</div>
+									</div>
+								</div>
+							</div>
+							<div class="calc-screen calc-screen-18">
+								<div class="calc-screen-title">Wer soll die <span>Bewertung</span> erhalten?</div>
+								<form>
+									<div class="contact-checks">
+										<div class="form-check">
+											<input type="radio" value="frau" id="frau2" name="gender">
+											<label for="frau2">Frau</label>
+										</div>
+										<div class="form-check">
+											<input type="radio" value="herr" id="herr211" name="gender">
+											<label for="herr211">Herr</label>
+										</div>
+									</div>
+									<div class="contact-form-flex">
+										<div class="form-block">
+											<input type="text" placeholder="Vorname">
+										</div>
+										<div class="form-block">
+											<input type="tel" placeholder="telefon">
+										</div>
+									</div>
+									<div class="contact-form-flex">
+										<div class="form-block">
+											<input type="text" placeholder="Nachname">
+										</div>
+										<div class="form-block">
+											<input type="email" placeholder="E-mail">
+										</div>
+									</div>
+									<div class="contact-form-bottom">
+										<div class="contact-form-protect">
+											<div class="form-check">
+												<input type="checkbox" id="protect2">
+												<label for="protect2">Dieser Service ist kostenfrei. Mit Angabe meiner Daten stimme ich dem Kontakt durch WOHNLOWE zu, siehe <a href="#">Datenschutzhinweis</a>.</label>
+											</div>
+										</div>
+										<button type="submit" class="btn">
+											bewertung erhalten
+											<span>kostenlos und unverbindlich</span>
+										</button>
+									</div>
+									<input type="hidden" data-id="input9">
+									<input type="hidden" data-id="input10">
+									<input type="hidden" data-id="input11">
+									<input type="hidden" data-id="input12">
+									<input type="hidden" data-id="input13">
+									<input type="hidden" data-id="input14">
+									<input type="hidden" data-id="input15">
+									<input type="hidden" data-id="input16">
+									<input type="hidden" data-id="input17">
+								</form>
+							</div>
+						</div>
+						<div class="calc-nav">
+							<button type="button" class="calc-back calc-nav-button">
+								<svg width="24px" height="16px" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22 8L3 8" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M8 14L2 8L8 2" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+							<div class="calc-progress"><span></span></div>
+							<button type="button" class="calc-forward calc-nav-button btn btn-arrow">
+								<span>weiter</span>
+								<svg width="45px" height="16px" viewBox="0 0 45 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 8L42 8" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M37 2L43 8L37 14" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div data-id="property" class="calc-block">
+						<div class="calc-screens">
+							<div data-target="input19" class="calc-screen calc-screen-19 active">
+								<div class="calc-screen-title">Welche <span>Fläche</span> hat das Grundstück?</div>
+								<div class="calc-slider">
+									<div class="calc-slider-icon">
+										<img src="img/calc-icon.svg" alt="icon">
+									</div>
+									<div class="calc-slider-range">
+										<div class="range range-1"></div>
+										<div class="calc-slider-range-labels">
+											<div class="calc-slider-range-label"><250m<sup>2</sup></div>
+											<div class="calc-slider-range-label">>2500m<sup>2</sup></div>
+										</div>
+									</div>
+									<div class="calc-slider-input">
+										<div class="calc-slider-input-block">
+											<input type="number" min="250" max="2500" value="250">
+											<div class="calc-slider-input-postfix">m<sup>2</sup></div>
+										</div>
+										<div class="calc-slider-input-label">Alternativ eintippen</div>
+									</div>
+								</div>
+							</div>
+							<div data-target="input20" class="calc-screen calc-screen-20">
+								<div class="calc-screen-title">Bitte wählen Sie die <span>Art</span> des Grundstücks.</div>
+								<div class="choose-buttons choose-buttons-vertical choose-buttons-4">
+									<button type="button" class="choose-button choose-button-mb active">
+										<img src="img/icon-15.svg" alt="icon">
+										<span>kurzfristig bebaubar</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-16.svg" alt="icon">
+										<span>eingeschränkt bebaubar</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-17.svg" alt="icon">
+										<span>nicht bebaubar</span>
+									</button>
+									<button type="button" class="choose-button">
+										<img src="img/icon-18.svg" alt="icon">
+										<span>weiss nicht</span>
+									</button>
+								</div>
+							</div>
+							<div data-target="input21" class="calc-screen calc-screen-21">
+								<div class="calc-screen-title">In welcher <span>Region</span> befindet sich das Objekt?</div>
+								<div class="postcode-wrap">
+									<div class="postcode-img">
+										<img src="img/location-map.svg" alt="img">
+									</div>
+									<div class="postcode-input form-block">
+										<input type="text">
+										<div class="postcode-input-label">Postleitzahl</div>
+									</div>
+								</div>
+							</div>
+							<div class="calc-screen calc-screen-22">
+								<div class="calc-screen-title">Wer soll die <span>Bewertung</span> erhalten?</div>
+								<form>
+									<div class="contact-checks">
+										<div class="form-check">
+											<input type="radio" value="frau" id="frau30" name="gender">
+											<label for="frau30">Frau</label>
+										</div>
+										<div class="form-check">
+											<input type="radio" value="herr" id="herr30" name="gender">
+											<label for="herr30">Herr</label>
+										</div>
+									</div>
+									<div class="contact-form-flex">
+										<div class="form-block">
+											<input type="text" placeholder="Vorname">
+										</div>
+										<div class="form-block">
+											<input type="tel" placeholder="telefon">
+										</div>
+									</div>
+									<div class="contact-form-flex">
+										<div class="form-block">
+											<input type="text" placeholder="Nachname">
+										</div>
+										<div class="form-block">
+											<input type="email" placeholder="E-mail">
+										</div>
+									</div>
+									<div class="contact-form-bottom">
+										<div class="contact-form-protect">
+											<div class="form-check">
+												<input type="checkbox" id="protect30">
+												<label for="protect30">Dieser Service ist kostenfrei. Mit Angabe meiner Daten stimme ich dem Kontakt durch WOHNLOWE zu, siehe <a href="#">Datenschutzhinweis</a>.</label>
+											</div>
+										</div>
+										<button type="submit" class="btn">
+											bewertung erhalten
+											<span>kostenlos und unverbindlich</span>
+										</button>
+									</div>
+									<input type="hidden" data-id="input19">
+									<input type="hidden" data-id="input20">
+									<input type="hidden" data-id="input21">
+								</form>
+							</div>
+						</div>
+						<div class="calc-nav">
+							<button type="button" class="calc-back calc-nav-button">
+								<svg width="24px" height="16px" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22 8L3 8" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M8 14L2 8L8 2" stroke="#C4C4C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+							<div class="calc-progress"><span></span></div>
+							<button type="button" class="calc-forward calc-nav-button btn btn-arrow">
+								<span>weiter</span>
+								<svg width="45px" height="16px" viewBox="0 0 45 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 8L42 8" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M37 2L43 8L37 14" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-back"></div>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 
